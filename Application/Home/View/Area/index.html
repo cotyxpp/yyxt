@@ -1,0 +1,75 @@
+<extend name="Public/base" />
+<block name="crumb">
+    <ul class="breadcrumb">
+        <li> <i class="ace-icon fa fa-home home-icon"></i>
+            <a href="__ROOT__/">首页</a>
+        </li>
+        <li>
+            <a href="javascript:;">系统设置</a>
+        </li>
+        <li class="active">配置管理</li>
+    </ul>
+</block>
+<block name="body">
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="dd" id="nestable">
+                <ol class="dd-list">
+                    <volist name="list" id="vo">
+                        <li class="dd-item" data-id="{$vo.id}">
+                            <div class="dd-handle">{$vo.name}
+                                <div class="pull-right action-buttons">
+                                    <a class="blue" href="#">
+                                        <i class="ace-icon fa fa-pencil bigger-130"></i>
+                                    </a>
+                                    <a class="red" href="#">
+                                        <i class="ace-icon fa fa-trash-o bigger-130"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <notempty name="vo.child">
+                                <ol class="dd-list">
+                                    <volist name="vo.child" id="v">
+                                        <li class="dd-item" data-id="{$v.id}">
+                                            <div class="dd-handle">
+                                                {$v.name}
+                                                <div class="pull-right action-buttons">
+                                                    <a class="blue" href="#">
+                                                        <i class="ace-icon fa fa-pencil bigger-130"></i>
+                                                    </a>
+                                                    <a class="red" href="#">
+                                                        <i class="ace-icon fa fa-trash-o bigger-130"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </volist>
+                                </ol>
+                            </notempty>
+                        </li>
+                    </volist>
+                </ol>
+            </div>
+        </div>
+        <div class="vspace-16-sm"></div>
+    </div>
+</block>
+<block name="script">
+    <script src="__PUBLIC__/js/jquery.nestable.js"></script>
+</block>
+<block name="footer">
+    <!-- inline scripts related to this page -->
+    <script type="text/javascript">
+    jQuery(function($) {
+
+        $('.dd').nestable();
+
+        $('.dd-handle a').on('mousedown', function(e) {
+            e.stopPropagation();
+        });
+
+        $('[data-rel="tooltip"]').tooltip();
+
+    });
+    </script>
+</block>

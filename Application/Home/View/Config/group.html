@@ -1,0 +1,88 @@
+<extend name="Public/base" />
+<block name="style">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/jquery-ui.css">
+</block>
+<block name="crumb">
+    <ul class="breadcrumb">
+        <li> <i class="ace-icon fa fa-home home-icon"></i>
+            <a href="#">首页</a>
+        </li>
+        <li>
+            <a href="javascript:;">系统设置</a>
+        </li>
+        <li class="active">配置管理</li>
+    </ul>
+</block>
+<block name="body">
+    <div class="row">
+        <div class="col-xs-12">
+            <!-- PAGE CONTENT BEGINS -->
+            <div class="row">
+                <div class="col-xs-12">
+                    <h3 class=" blue lighter smaller"> <i class="ace-icon fa fa-cogs smaller-90"></i>
+                        网站设置
+                    </h3>
+                    <div class="hr hr-double"></div>
+                    <div id="tabs">
+                        <ul>
+                            <volist name="Think.config.CONFIG_GROUP_LIST" id="g">
+                                <li>
+                                    <a href="#tabs-{$key}">{$g}配置</a>
+                                </li>
+                            </volist>
+                        </ul>
+                        <div class="clearfix"></div>
+                        <volist name="Think.config.CONFIG_GROUP_LIST" id="g" key="group">
+                            <div id="tabs-{$group}">
+                                <form class="form-horizontal" role="form">
+                                    <volist name="list" id="vo">
+                                        <eq name="vo.group" value="$group">
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label" for="form-field-{$vo.id}" title="{$vo.remark}">{$vo.title}：</label>
+                                                <div class="col-sm-6">
+                                                    <switch name="vo.type">
+                                                        <case value="0">
+                                                            <input type="text" id="form-field-{$vo.id}" class="col-xs-1 col-sm-1 input-sm" name="config[{$vo.name}]" value="{$vo.value}" />
+                                                        </case>
+                                                        <case value="1">
+                                                            <input type="text" id="form-field-{$vo.id}" class="col-xs-12 col-sm-12" name="config[{$vo.name}]" value="{$vo.value}" />
+                                                        </case>
+                                                        <case value="2|3">
+                                                            <textarea class="autosize-transition form-control" id="form-field-{$vo.id}" name="config[{$vo.name}]">{$vo.value}</textarea>
+                                                        </case>
+                                                        <case value="4">
+                                                            <select class="form-control" id="form-field-select-{$vo.id}" name="config[{$vo.name}]">
+                                                                <volist name=":parse_config_attr($vo['extra'])" id="vo">
+                                                                    <option value="{$key}" <eq name="vo.value" value="$key">selected</eq> >{$vo}
+                                        </option>
+                                        </volist>
+                                        </select>
+                                        </case>
+                                        </switch>
+                                        <span class="help-inline col-xs-12 col-sm-7">
+                                                    <span class="middle">{$vo.remark|default=''}</span>
+                                        </span>
+                                        </div>
+                                        </div>
+                                        </eq>
+                                    </volist>
+                                </form>
+                            </div>
+                        </volist>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</block>
+<block name="script">
+    <script src="__PUBLIC__/js/jquery-ui.js"></script>
+    <script src="__PUBLIC__/js/jquery.ui.touch-punch.js"></script>
+    <script src="__PUBLIC__/js/autosize.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        autosize($('textarea[class*=autosize]'));
+        $("#tabs").tabs();
+    });
+    </script>
+</block>
