@@ -1,0 +1,76 @@
+[ 2016-03-08T21:16:27+08:00 ] 127.0.0.1 /yyxt/index.php/Config/group
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011678s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010525s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010778s ]
+SQL: SHOW COLUMNS FROM `xm_menu` [ RunTime:0.0060s ]
+SQL: SELECT `id`,`title`,`pid`,`url`,`icon` FROM `xm_menu` WHERE `hide` = 0 ORDER BY `pid` asc,`sort` asc,`id` asc  [ RunTime:0.0016s ]
+NOTIC: [8] Use of undefined constant IS_ROOT - assumed 'IS_ROOT' /Users/xm/htdocs/yyxt/Application/Home/Controller/CommonController.class.php 第 43 行.
+NOTIC: [8] Use of undefined constant IS_ROOT - assumed 'IS_ROOT' /Users/xm/htdocs/yyxt/Application/Home/Controller/CommonController.class.php 第 43 行.
+NOTIC: [8] Use of undefined constant IS_ROOT - assumed 'IS_ROOT' /Users/xm/htdocs/yyxt/Application/Home/Controller/CommonController.class.php 第 43 行.
+NOTIC: [8] Use of undefined constant IS_ROOT - assumed 'IS_ROOT' /Users/xm/htdocs/yyxt/Application/Home/Controller/CommonController.class.php 第 43 行.
+NOTIC: [8] Use of undefined constant IS_ROOT - assumed 'IS_ROOT' /Users/xm/htdocs/yyxt/Application/Home/Controller/CommonController.class.php 第 43 行.
+NOTIC: [8] Use of undefined constant IS_ROOT - assumed 'IS_ROOT' /Users/xm/htdocs/yyxt/Application/Home/Controller/CommonController.class.php 第 43 行.
+NOTIC: [8] Use of undefined constant IS_ROOT - assumed 'IS_ROOT' /Users/xm/htdocs/yyxt/Application/Home/Controller/CommonController.class.php 第 43 行.
+NOTIC: [8] Use of undefined constant IS_ROOT - assumed 'IS_ROOT' /Users/xm/htdocs/yyxt/Application/Home/Controller/CommonController.class.php 第 43 行.
+NOTIC: [8] Use of undefined constant IS_ROOT - assumed 'IS_ROOT' /Users/xm/htdocs/yyxt/Application/Home/Controller/CommonController.class.php 第 43 行.
+NOTIC: [8] Use of undefined constant IS_ROOT - assumed 'IS_ROOT' /Users/xm/htdocs/yyxt/Application/Home/Controller/CommonController.class.php 第 43 行.
+NOTIC: [8] Use of undefined constant IS_ROOT - assumed 'IS_ROOT' /Users/xm/htdocs/yyxt/Application/Home/Controller/CommonController.class.php 第 43 行.
+NOTIC: [8] Use of undefined constant IS_ROOT - assumed 'IS_ROOT' /Users/xm/htdocs/yyxt/Application/Home/Controller/CommonController.class.php 第 43 行.
+NOTIC: [8] Use of undefined constant IS_ROOT - assumed 'IS_ROOT' /Users/xm/htdocs/yyxt/Application/Home/Controller/CommonController.class.php 第 43 行.
+NOTIC: [8] Use of undefined constant IS_ROOT - assumed 'IS_ROOT' /Users/xm/htdocs/yyxt/Application/Home/Controller/CommonController.class.php 第 43 行.
+NOTIC: [8] Use of undefined constant IS_ROOT - assumed 'IS_ROOT' /Users/xm/htdocs/yyxt/Application/Home/Controller/CommonController.class.php 第 43 行.
+NOTIC: [8] Use of undefined constant IS_ROOT - assumed 'IS_ROOT' /Users/xm/htdocs/yyxt/Application/Home/Controller/CommonController.class.php 第 43 行.
+NOTIC: [8] Use of undefined constant IS_ROOT - assumed 'IS_ROOT' /Users/xm/htdocs/yyxt/Application/Home/Controller/CommonController.class.php 第 43 行.
+NOTIC: [8] Use of undefined constant IS_ROOT - assumed 'IS_ROOT' /Users/xm/htdocs/yyxt/Application/Home/Controller/CommonController.class.php 第 43 行.
+NOTIC: [8] Use of undefined constant IS_ROOT - assumed 'IS_ROOT' /Users/xm/htdocs/yyxt/Application/Home/Controller/CommonController.class.php 第 43 行.
+NOTIC: [8] Use of undefined constant IS_ROOT - assumed 'IS_ROOT' /Users/xm/htdocs/yyxt/Application/Home/Controller/CommonController.class.php 第 43 行.
+NOTIC: [8] Use of undefined constant IS_ROOT - assumed 'IS_ROOT' /Users/xm/htdocs/yyxt/Application/Home/Controller/CommonController.class.php 第 43 行.
+NOTIC: [8] Use of undefined constant IS_ROOT - assumed 'IS_ROOT' /Users/xm/htdocs/yyxt/Application/Home/Controller/CommonController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `xm_config` [ RunTime:0.0026s ]
+SQL: SELECT `id`,`group`,`name`,`title`,`extra`,`value`,`remark`,`type` FROM `xm_config` WHERE ( status=1 ) ORDER BY `sort` asc,`id` asc  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000163s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000291s ]
+NOTIC: [8] Undefined index: class /Users/xm/htdocs/yyxt/Application/Runtime/Cache/Home/834e3d8ab73c419bbbd2dcbeedc3f52d.php 第 249 行.
+NOTIC: [8] Undefined index: class /Users/xm/htdocs/yyxt/Application/Runtime/Cache/Home/834e3d8ab73c419bbbd2dcbeedc3f52d.php 第 249 行.
+NOTIC: [8] Undefined index: class /Users/xm/htdocs/yyxt/Application/Runtime/Cache/Home/834e3d8ab73c419bbbd2dcbeedc3f52d.php 第 254 行.
+NOTIC: [8] Undefined index: class /Users/xm/htdocs/yyxt/Application/Runtime/Cache/Home/834e3d8ab73c419bbbd2dcbeedc3f52d.php 第 254 行.
+NOTIC: [8] Undefined index: class /Users/xm/htdocs/yyxt/Application/Runtime/Cache/Home/834e3d8ab73c419bbbd2dcbeedc3f52d.php 第 254 行.
+NOTIC: [8] Undefined index: class /Users/xm/htdocs/yyxt/Application/Runtime/Cache/Home/834e3d8ab73c419bbbd2dcbeedc3f52d.php 第 254 行.
+NOTIC: [8] Undefined index: class /Users/xm/htdocs/yyxt/Application/Runtime/Cache/Home/834e3d8ab73c419bbbd2dcbeedc3f52d.php 第 249 行.
+NOTIC: [8] Undefined index: class /Users/xm/htdocs/yyxt/Application/Runtime/Cache/Home/834e3d8ab73c419bbbd2dcbeedc3f52d.php 第 254 行.
+NOTIC: [8] Undefined index: class /Users/xm/htdocs/yyxt/Application/Runtime/Cache/Home/834e3d8ab73c419bbbd2dcbeedc3f52d.php 第 254 行.
+NOTIC: [8] Undefined index: class /Users/xm/htdocs/yyxt/Application/Runtime/Cache/Home/834e3d8ab73c419bbbd2dcbeedc3f52d.php 第 249 行.
+NOTIC: [8] Undefined index: class /Users/xm/htdocs/yyxt/Application/Runtime/Cache/Home/834e3d8ab73c419bbbd2dcbeedc3f52d.php 第 249 行.
+NOTIC: [8] Undefined index: class /Users/xm/htdocs/yyxt/Application/Runtime/Cache/Home/834e3d8ab73c419bbbd2dcbeedc3f52d.php 第 249 行.
+NOTIC: [8] Undefined index: class /Users/xm/htdocs/yyxt/Application/Runtime/Cache/Home/834e3d8ab73c419bbbd2dcbeedc3f52d.php 第 254 行.
+NOTIC: [8] Undefined index: class /Users/xm/htdocs/yyxt/Application/Runtime/Cache/Home/834e3d8ab73c419bbbd2dcbeedc3f52d.php 第 254 行.
+NOTIC: [8] Undefined index: class /Users/xm/htdocs/yyxt/Application/Runtime/Cache/Home/834e3d8ab73c419bbbd2dcbeedc3f52d.php 第 254 行.
+NOTIC: [8] Undefined index: class /Users/xm/htdocs/yyxt/Application/Runtime/Cache/Home/834e3d8ab73c419bbbd2dcbeedc3f52d.php 第 254 行.
+NOTIC: [8] Undefined index: class /Users/xm/htdocs/yyxt/Application/Runtime/Cache/Home/834e3d8ab73c419bbbd2dcbeedc3f52d.php 第 249 行.
+NOTIC: [8] Undefined index: class /Users/xm/htdocs/yyxt/Application/Runtime/Cache/Home/834e3d8ab73c419bbbd2dcbeedc3f52d.php 第 254 行.
+NOTIC: [8] Undefined index: class /Users/xm/htdocs/yyxt/Application/Runtime/Cache/Home/834e3d8ab73c419bbbd2dcbeedc3f52d.php 第 254 行.
+NOTIC: [2] Illegal string offset 'value' /Users/xm/htdocs/yyxt/Application/Runtime/Cache/Home/834e3d8ab73c419bbbd2dcbeedc3f52d.php 第 420 行.
+NOTIC: [2] Illegal string offset 'value' /Users/xm/htdocs/yyxt/Application/Runtime/Cache/Home/834e3d8ab73c419bbbd2dcbeedc3f52d.php 第 420 行.
+NOTIC: [2] Illegal string offset 'value' /Users/xm/htdocs/yyxt/Application/Runtime/Cache/Home/834e3d8ab73c419bbbd2dcbeedc3f52d.php 第 420 行.
+NOTIC: [2] Illegal string offset 'value' /Users/xm/htdocs/yyxt/Application/Runtime/Cache/Home/834e3d8ab73c419bbbd2dcbeedc3f52d.php 第 420 行.
+NOTIC: [2] Illegal string offset 'value' /Users/xm/htdocs/yyxt/Application/Runtime/Cache/Home/834e3d8ab73c419bbbd2dcbeedc3f52d.php 第 420 行.
+NOTIC: [2] Illegal string offset 'value' /Users/xm/htdocs/yyxt/Application/Runtime/Cache/Home/834e3d8ab73c419bbbd2dcbeedc3f52d.php 第 420 行.
+NOTIC: [2] Illegal string offset 'value' /Users/xm/htdocs/yyxt/Application/Runtime/Cache/Home/834e3d8ab73c419bbbd2dcbeedc3f52d.php 第 420 行.
+NOTIC: [2] Illegal string offset 'value' /Users/xm/htdocs/yyxt/Application/Runtime/Cache/Home/834e3d8ab73c419bbbd2dcbeedc3f52d.php 第 420 行.
+NOTIC: [2] Illegal string offset 'value' /Users/xm/htdocs/yyxt/Application/Runtime/Cache/Home/834e3d8ab73c419bbbd2dcbeedc3f52d.php 第 420 行.
+NOTIC: [2] Illegal string offset 'value' /Users/xm/htdocs/yyxt/Application/Runtime/Cache/Home/834e3d8ab73c419bbbd2dcbeedc3f52d.php 第 420 行.
+NOTIC: [2] Illegal string offset 'value' /Users/xm/htdocs/yyxt/Application/Runtime/Cache/Home/834e3d8ab73c419bbbd2dcbeedc3f52d.php 第 420 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048655s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048782s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005769s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005898s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007038s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007277s ]
+
